@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Consulta de Activos</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="container">
+<header>
+<h1>Consulta de Activos</h1>
+<p>Busca por número de serie o por sus últimos dígitos.</p>
+</header>
+<section class="search-card">
+<label for="serie">Serie</label>
+<div class="search-row">
+<input id="serie" type="search" placeholder="Ej.: últimos 4 dígitos" autocomplete="off" spellcheck="false" disabled>
+<button id="btnBuscar" type="button" disabled>Buscar</button>
+</div>
+<div id="sugerencias" class="suggestions" aria-live="polite"></div>
+</section>
+<section id="estado" class="status" aria-live="polite">Cargando base de activos...</section>
+<section id="resultado" aria-live="polite"></section>
+</main>
+<script src="app.js"></script>
+</body>
+</html>
